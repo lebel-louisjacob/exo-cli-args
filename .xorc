@@ -1,0 +1,7 @@
+name: mainArgs
+version: 0.0.1
+dependencies:
+- bit@0.0.2
+- binary@0.0.2
+- stack@0.0.2
+- string@0.0.2
