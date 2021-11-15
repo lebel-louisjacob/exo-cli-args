@@ -1,6 +1,6 @@
-# Main Arguments
+# Cli Arguments
 
-String stack wrapper around native command line arguments.
+String stack wrapper around program command line arguments.
 
 ## Build
 
