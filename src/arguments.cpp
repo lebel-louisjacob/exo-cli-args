@@ -53,8 +53,8 @@ exo::Object value_property(exo::Object const self) {
 
     auto argument_stack { empty_stack };
 
-    for (uint32_t argv_index { argc }; argv_index > 0; --argv_index) {
-        auto const&& character_string { c_string_to_string(argv[argv_index - 1], self) };
+    for (uint32_t argv_index { 0 }; argv_index < argc; ++argv_index) {
+        auto const&& character_string { c_string_to_string(argv[argv_index], self) };
         auto const&& push_function { exo::get("push", argument_stack) };
         argument_stack = exo::call(character_string, push_function);
     }
